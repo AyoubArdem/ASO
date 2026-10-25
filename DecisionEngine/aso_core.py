@@ -187,6 +187,9 @@ class AgentSecurityOrchestrator:
         secret_broker: Any | None = None,
         secret_context: Any | None = None,
         tool_context: ToolSecurityContext | None = None,
+        agent_name: str | None = None,
+        developer_name: str | None = None,
+        agent_description: str | None = None,
     ) -> None:
         self.framework = Framework(framework)
         if not llm or not prompt_template:
@@ -213,6 +216,12 @@ class AgentSecurityOrchestrator:
         self.connection.row_factory = sqlite3.Row
         self.connection.execute("PRAGMA foreign_keys = ON")
         self._create_schema()
+        self.agent = self.create_agent(
+            agent_name or f"aso-agent-{uuid.uuid4().hex[:8]}",
+            agent_name or self.llm,
+            developer_name or "ASO",
+            agent_description or self.template,
+        )
 
     def _create_schema(self) -> None:
         with self.connection:

@@ -6,7 +6,7 @@
 
 **Inspect. Decide. Authorize. Protect.**
 
-A modular security framework designed to inspect AI-agent prompts, coordinate security decisions, govern memory access, control tool execution, and protect sensitive secrets throughout an agent's execution lifecycle.
+A modular security framework designed to inspect AI-agent prompts, coordinate security decisions, govern memory access, control tool execution and protect sensitive secrets throughout an agent's execution lifecycle.
 
 [Architecture](#architecture) ·
 [Security Pipeline](#security-pipeline) ·
@@ -14,8 +14,7 @@ A modular security framework designed to inspect AI-agent prompts, coordinate se
 [Decision Engine](#decision-engine) ·
 [Security Model](#security-model) ·
 [Roadmap](#roadmap) ·
-[Engineer Tutorial](docs/aso_tutorial.md) ·
-[Publishing](docs/publishing.md)
+[ASO Tutorial](docs/aso_tutorial.md) 
 
 </div>
 
