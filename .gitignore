@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+*.egg
+.DS_Store
+Thumbs.db
+.aso/
+.idea/
+.vscode/
+*.log
+
+# Local database files
+*.db
+*.sqlite3
+
+# Generated docs or local build artifacts if you do not want to track them
+/.cache/
